@@ -1,3 +1,11 @@
+// Note:
+//
+// This is very WIP. I think we should use Postgres to index the URLs and text.
+// It has nice full text search capabilities.
+//
+// We could have it do something like scrape the websites for everyone in the Slack.
+//
+// - Zach
 import { parse } from "node-html-parser"
 
 async function indexUrl(url, depth=0) {
